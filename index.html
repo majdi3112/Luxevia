@@ -4,10 +4,494 @@
     <meta charset="UTF-8" />
     <title>Luxevia – Parfum Vending</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Luxevia biedt premium parfum vending machines voor high-traffic locaties. Verken pilot- en partnershipmogelijkheden." />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="bg-slate-950 text-slate-50">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+  <body>
+    <a class="skip-link" href="#hero">Ga naar inhoud</a>
+
+    <header class="navbar" role="banner">
+      <div class="container navbar__inner">
+        <a class="brand" href="#hero" aria-label="Luxevia home">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__text">
+            <span class="brand__name">LUXEVIA</span>
+            <span class="brand__tag">Parfum Vending</span>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Hoofdnavigatie">
+          <a href="#concept">Concept</a>
+          <a href="#locaties">Locaties</a>
+          <a href="#voordelen">Voordelen</a>
+          <a href="#werkwijze">Hoe het werkt</a>
+          <a href="#product">Product</a>
+          <a href="#pilot">Pilot</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a class="btn btn--primary" href="#contact">Plan een kennismaking</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="glow glow--center"></div>
+          <div class="glow glow--right"></div>
+          <div class="glow glow--left"></div>
+        </div>
+
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Voor locatie-eigenaren</p>
+            <h1 class="hero__title">
+              Extra omzet en service voor uw bezoekers —
+              <span class="hero__title-sub">luxe parfum <span class="accent">per spray</span>.</span>
+            </h1>
+            <p class="lead">
+              Luxevia plaatst compacte machines op uw locatie. Bezoekers betalen vanaf €1 per spray; u biedt een premium service zonder extra personeelslast.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn btn--primary" href="#contact">Vraag een pilot aan</a>
+              <a class="btn btn--secondary" href="#pilot">Plan een kennismaking</a>
+            </div>
+
+            <p class="fineprint">Richtprijs ± €1 per spray — indicatief, per locatie af te stemmen</p>
+          </div>
+
+          <!-- VENDING VISUAL (ongewijzigde positie: rechts) -->
+          <div class="hero__visual">
+            <div class="visual-glow" aria-hidden="true"></div>
+            <div class="card card--visual">
+              <div class="visual">
+                <div class="visual__left">
+                  <div>
+                    <p class="visual__kicker">Fragrance lineup</p>
+                    <p class="visual__title">Signature selectie</p>
+                  </div>
+                  <div class="swatches" aria-hidden="true">
+                    <div class="sw sw--amber"></div>
+                    <div class="sw sw--sky"></div>
+                    <div class="sw sw--rose"></div>
+                    <div class="sw sw--emerald"></div>
+                    <div class="sw sw--violet"></div>
+                    <div class="sw sw--slate"></div>
+                  </div>
+                </div>
+                <div class="visual__right">
+                  <div class="panel">
+                    <div class="panel__top">
+                      <span>Parfum vending</span>
+                      <span class="muted">Live preview</span>
+                    </div>
+                    <div class="panel__screen" aria-hidden="true"></div>
+                    <div class="panel__bottom">
+                      <span class="muted">Contactloze betaling</span>
+                      <span class="muted">€1 per spray</span>
+                    </div>
+                  </div>
+                  <div class="mini">
+                    <div class="mini__label muted">Netwerk</div>
+                    <div class="mini__value">Wi‑Fi / 4G LTE</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="visual-footer">
+                <div>
+                  <div class="visual-footer__name">Mini Small Cologne Vending</div>
+                  <div class="visual-footer__desc">Compacte luxe dispenser voor high-traffic locaties.</div>
+                </div>
+                <div class="price">
+                  <div class="price__value">± €1</div>
+                  <div class="price__unit">per spray</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONCEPT -->
+      <section id="concept" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Over het concept</p>
+            <h2 class="section__title">Luxe parfum, on demand – zonder personeelsdruk.</h2>
+            <p class="section__subtitle">
+              Luxevia plaatst compacte parfum vending machines op plekken waar bezoekers snel willen opfrissen. Bezoekers kiezen hun favoriete geur en betalen per spray, terwijl u een extra service én nieuwe omzetstroom toevoegt.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <h3>Per spray betalen</h3>
+              <p>Bezoekers betalen per gebruik (vanaf €1 per spray). Geen abonnementen of ingewikkelde prijsstructuren – helder, transparant en direct.</p>
+            </article>
+            <article class="card">
+              <h3>Premium & compact</h3>
+              <p>Een strakke, luxe uitstraling in een zeer compact formaat. De machine past eenvoudig op een muur, balie of inloopzone zonder het interieur te domineren.</p>
+            </article>
+            <article class="card">
+              <h3>Gebruiksvriendelijk</h3>
+              <p>Duidelijke interface, korte instructies en contactloze betaling. Binnen enkele seconden gekozen, betaald en gesprayd.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATIES -->
+      <section id="locaties" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Voor welke locaties</p>
+            <h2 class="section__title">Gemaakt voor high-footfall omgevingen.</h2>
+            <p class="section__subtitle">Waar veel mensen langskomen, voegt Luxevia direct waarde toe. De machine functioneert als servicepunt én als subtiele merkdrager.</p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🏋️</div>
+              <h3>Sportscholen</h3>
+              <p>Ideaal na een workout: bezoekers kunnen zich snel en fris voelen voordat ze verder gaan.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🏨</div>
+              <h3>Hotels</h3>
+              <p>Extra service in lobby, verdieping of naast de lift voor gasten die net willen bijsprayen.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🛍️</div>
+              <h3>Winkelcentra</h3>
+              <p>Plaatsing bij entrees, toiletten of passagezones verhoogt beleving én verblijfsduur.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🍸</div>
+              <h3>Bars & clubs</h3>
+              <p>Bezoekers frissen zich op tussen de drankjes en dansen door zonder omweg.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🎟️</div>
+              <h3>Events</h3>
+              <p>Premium touchpoint op beurzen, congressen en festivals voor een onderscheidende ervaring.</p>
+            </article>
+            <article class="card">
+              <div class="card__icon" aria-hidden="true">🛒</div>
+              <h3>Premium retail</h3>
+              <p>Versterk het merkgevoel in luxe winkels, parfumeriehoeken en flagship stores.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- VOORDELEN -->
+      <section id="voordelen" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Voordelen voor locatie-eigenaren</p>
+            <h2 class="section__title">Service, uitstraling en omzet in één compacte unit.</h2>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card">
+              <h3>Extra service voor bezoekers</h3>
+              <p>Een directe, tastbare service die comfort verhoogt en positief bijdraagt aan de totale ervaring op locatie.</p>
+            </article>
+            <article class="card">
+              <h3>Premium uitstraling</h3>
+              <p>Het design sluit aan bij moderne interieurs en versterkt een luxe, verzorgde indruk.</p>
+            </article>
+            <article class="card">
+              <h3>Nieuwe omzetmogelijkheid</h3>
+              <p>Per spray betaald model met transparante verdeling. Extra inkomsten zonder extra personeel.</p>
+            </article>
+            <article class="card">
+              <h3>Compact formaat</h3>
+              <p>Past op een muur of wand en neemt minimale vloeroppervlakte in beslag.</p>
+            </article>
+            <article class="card">
+              <h3>Lage drempel voor gebruik</h3>
+              <p>Duidelijke instructies, snelle transactie en contactloos betalen zorgen voor hoge adoptie.</p>
+            </article>
+            <article class="card">
+              <h3>Pilotvriendelijk</h3>
+              <p>Geschikt voor tijdelijke plaatsingen en A/B‑tests op verschillende locaties.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOE HET WERKT -->
+      <section id="werkwijze" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Hoe het werkt</p>
+            <h2 class="section__title">In drie duidelijke stappen operationeel.</h2>
+          </div>
+
+          <div class="grid grid--works">
+            <div class="stack">
+              <article class="card step">
+                <div class="step__num">1</div>
+                <div>
+                  <h3>Machine wordt geplaatst op locatie</h3>
+                  <p>Samen bepalen we de beste positie. De machine wordt geïnstalleerd, aangesloten en ingericht met passende geuren.</p>
+                </div>
+              </article>
+              <article class="card step">
+                <div class="step__num">2</div>
+                <div>
+                  <h3>Bezoeker kiest en betaalt</h3>
+                  <p>De bezoeker kiest een geur op het touchscreen en betaalt contactloos of met kaart per spray.</p>
+                </div>
+              </article>
+              <article class="card step">
+                <div class="step__num">3</div>
+                <div>
+                  <h3>Bezoeker ontvangt een parfum spray</h3>
+                  <p>De machine geeft één gecontroleerde spray af. Hygiënisch, snel en zonder extra druk op uw personeel.</p>
+                </div>
+              </article>
+            </div>
+
+            <aside class="card">
+              <div class="aside__title">Ervaring voor de bezoeker</div>
+              <ul class="bullets">
+                <li>Duidelijke instructies op het 10&quot; touchscreen.</li>
+                <li>Betaling in enkele seconden via contactloze terminals.</li>
+                <li>Korte wachttijd door snelle dispensing en vaste sprayhoeveelheid.</li>
+                <li>Altijd dezelfde kwaliteit door gecontroleerde dosering.</li>
+              </ul>
+              <div class="note">
+                <div class="note__title">Prijsindicatie</div>
+                <div>Richtprijs per spray: <span class="accent">± €1</span>. Exacte prijsstelling en omzetverdeling worden per locatie afgestemd.</div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT -->
+      <section id="product" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Product highlights</p>
+            <h2 class="section__title">Mini Small Cologne Vending Machine Sprayer</h2>
+            <p class="section__subtitle">Een compacte, professionele dispenser ontwikkeld voor continu gebruik in publieke en semi‑publieke ruimtes.</p>
+          </div>
+
+          <div class="grid grid--product">
+            <article class="card">
+              <div class="aside__title">Productsamenvatting</div>
+              <p class="muted-p">
+                Een slimme parfumdispenser met 10&quot; touchscreen, meerdere reservoirs en geïntegreerde betaalterminal.
+                De machine biedt een gecontroleerde spray per transactie, bewaakt automatisch de voorraad en kan op afstand worden gemonitord.
+              </p>
+
+              <div class="specs">
+                <div class="specs__col">
+                  <div class="spec"><span class="muted">Capaciteit</span><span>20–150 stuks</span></div>
+                  <div class="spec"><span class="muted">Touchscreen</span><span>10 inch</span></div>
+                  <div class="spec"><span class="muted">Vermogen</span><span>100W</span></div>
+                  <div class="spec"><span class="muted">Afmetingen</span><span>23 × 41 × 70 cm</span></div>
+                  <div class="spec"><span class="muted">Gewicht</span><span>30 kg</span></div>
+                </div>
+                <div class="specs__col">
+                  <div class="spec"><span class="muted">Netwerk</span><span>Wi‑Fi en 4G LTE</span></div>
+                  <div class="spec"><span class="muted">Voorraadbeheer</span><span>Automatische stock monitoring</span></div>
+                  <div class="spec"><span class="muted">Betaalopties</span><span>Meerdere betaalmethoden</span></div>
+                  <div class="spec"><span class="muted">Extra functies</span><span>Remote monitoring, digitale bonnen</span></div>
+                  <div class="spec"><span class="muted">Branding</span><span>Custom graphics mogelijk</span></div>
+                  <div class="spec"><span class="muted">Certificering</span><span>CE, ISO</span></div>
+                  <div class="spec"><span class="muted">Garantie</span><span>2 jaar</span></div>
+                </div>
+              </div>
+            </article>
+
+            <div class="stack">
+              <article class="card">
+                <div class="aside__title">Digitale signage & branding</div>
+                <p class="muted-p">Het geïntegreerde scherm kan worden ingezet voor merkcampagnes, productuitleg of locatie‑specifieke boodschappen. Frontpanelen en visuals zijn te personaliseren binnen uw huisstijl.</p>
+              </article>
+              <article class="card">
+                <div class="aside__title">Operationele zekerheid</div>
+                <p class="muted-p">Dankzij afstandsmonitoring is inzicht in gebruik, voorraadniveaus en status beschikbaar. CE/ISO en twee jaar garantie ondersteunen professioneel gebruik.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PILOT -->
+      <section id="pilot" class="section">
+        <div class="container">
+          <div class="section__head section__head--center">
+            <p class="section__eyebrow">Pilot &amp; partnerships</p>
+            <h2 class="section__title">Start met een gerichte pilotplaatsing.</h2>
+            <p class="section__subtitle max-w-4xl">We werken samen met locaties die hun bezoekersbeleving actief willen versterken en openstaan voor nieuwe premium services.</p>
+          </div>
+
+          <div class="grid grid--2 max-w-5xl">
+            <article class="card">
+              <h3>Gericht testen met minimale belasting</h3>
+              <p>In een pilot onderzoeken we gezamenlijk of parfum vending past bij uw locatie, doelgroep en commerciële doelstellingen. We stemmen looptijd, positionering, prijsstelling en merkuitstraling af en meten gebruik en omzetontwikkeling.</p>
+              <p>Tijdens de pilot verzorgen wij plaatsing, inrichting, monitoring en periodieke evaluatie. U levert voornamelijk ruimte, stroom en interne afstemming.</p>
+            </article>
+            <article class="card">
+              <h3>Geschikt voor organisaties die:</h3>
+              <ul class="bullets">
+                <li>Beleving en gastvrijheid willen versterken met een tastbare service.</li>
+                <li>Zoeken naar nieuwe omzetkanalen met beperkte operationele impact.</li>
+                <li>Openstaan voor data‑gedreven pilots en heldere evaluatiemomenten.</li>
+                <li>Een moderne, premium uitstraling belangrijk vinden.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="center-row">
+            <a class="btn btn--primary" href="#contact">Bespreek een pilot</a>
+            <p class="fineprint center">Geen verplichting na pilot – vervolg alleen bij aantoonbare toegevoegde waarde.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Veelgestelde vragen</p>
+            <h2 class="section__title">Heldere antwoorden voor beslissers.</h2>
+          </div>
+
+          <div class="faq">
+            <details open>
+              <summary>Voor welke locaties is dit geschikt?</summary>
+              <div class="faq__body">De machines zijn ontwikkeld voor locaties met hoge loopstromen zoals sportscholen, hotels, winkelcentra, bars, clubs, events en premium retail. Samen kijken we naar de meest logische positie binnen uw locatie.</div>
+            </details>
+            <details>
+              <summary>Hoe werkt betalen per spray?</summary>
+              <div class="faq__body">Bezoekers kiezen een geur op het scherm, zien vooraf de prijs per spray en betalen contactloos of met kaart via de betaalterminal. Na betaling geeft de machine direct één gecontroleerde spray af.</div>
+            </details>
+            <details>
+              <summary>Hoe groot is de machine?</summary>
+              <div class="faq__body">De standaardunit is ongeveer 23 × 41 × 70 cm en weegt circa 30 kg. Daarmee is de machine compact genoeg voor wandmontage of plaatsing op een stevige console.</div>
+            </details>
+            <details>
+              <summary>Is branding op maat mogelijk?</summary>
+              <div class="faq__body">Ja. Frontpanelen en digitale visuals kunnen worden aangepast aan uw merkidentiteit of aan campagnes van partners.</div>
+            </details>
+            <details>
+              <summary>Kan dit eerst als pilot getest worden?</summary>
+              <div class="faq__body">Ja. We bieden pilotplaatsingen waarin we gedurende een afgesproken periode data verzamelen over gebruik, omzet en feedback. Op basis daarvan besluiten we gezamenlijk over opschaling.</div>
+            </details>
+            <details>
+              <summary>Is het concept geschikt voor meerdere branches?</summary>
+              <div class="faq__body">Zeker. Overal waar bezoekers zich willen opfrissen en waarde hechten aan een verzorgde uitstraling, kan de parfum vending machine waarde toevoegen. We stemmen de uitvoering af op uw branche en doelgroep.</div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section__head">
+            <p class="section__eyebrow">Contact</p>
+            <h2 class="section__title">Verken de mogelijkheden voor uw locatie.</h2>
+            <p class="section__subtitle">Het formulier hieronder is een visuele mockup en verstuurt geen gegevens. Gebruik de contactgegevens om direct contact op te nemen.</p>
+          </div>
+
+          <div class="grid grid--contact">
+            <article class="card">
+              <form class="form" action="#" method="post">
+                <div class="form__row">
+                  <div class="field">
+                    <label for="naam">Naam</label>
+                    <input id="naam" name="naam" type="text" placeholder="Voor- en achternaam" />
+                  </div>
+                  <div class="field">
+                    <label for="bedrijf">Bedrijf / locatie</label>
+                    <input id="bedrijf" name="bedrijf" type="text" placeholder="Naam organisatie of locatie" />
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="naam@bedrijf.nl" />
+                  </div>
+                  <div class="field">
+                    <label for="tel">Telefoon</label>
+                    <input id="tel" name="tel" type="tel" placeholder="+31 6 12345678" />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="type">Type locatie</label>
+                  <select id="type" name="type">
+                    <option value="" selected disabled>Maak een keuze</option>
+                    <option>Sportschool</option>
+                    <option>Hotel</option>
+                    <option>Winkelcentrum</option>
+                    <option>Bar of club</option>
+                    <option>Eventlocatie</option>
+                    <option>Retail / anders</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="msg">Korte toelichting</label>
+                  <textarea id="msg" name="msg" rows="4" placeholder="Beschrijf kort uw locatie en waarom parfum vending interessant kan zijn."></textarea>
+                </div>
+                <button class="btn btn--primary" type="button">Verstuur vrijblijvende aanvraag (mockup)</button>
+                <p class="fineprint">Dit formulier is een visueel voorbeeld en verstuurt geen gegevens.</p>
+              </form>
+            </article>
+
+            <aside class="stack">
+              <article class="card">
+                <div class="aside__title">Directe contactgegevens</div>
+                <dl class="dl">
+                  <div class="dl__row">
+                    <dt>E-mail</dt>
+                    <dd><a class="link" href="mailto:partnerships@jouwdomein.com">partnerships@jouwdomein.com</a></dd>
+                  </div>
+                  <div class="dl__row">
+                    <dt>Telefoon</dt>
+                    <dd><a class="link" href="tel:+31612345678">+31 6 12345678</a></dd>
+                  </div>
+                </dl>
+              </article>
+
+              <article class="card note-card">
+                <p>We reageren doorgaans binnen twee werkdagen met een voorstel voor een kort (online) kennismakingsgesprek.</p>
+                <p>Tijdens dit gesprek bespreken we uw type locatie, bezoekersprofiel en mogelijke pilotopzet.</p>
+              </article>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="footer__brand">Luxevia Fragrance Vending</div>
+          <div class="footer__tag">Compacte parfum vending oplossingen voor high-traffic locaties.</div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer links">
+          <a href="#concept">Concept</a>
+          <a href="#locaties">Locaties</a>
+          <a href="#voordelen">Voordelen</a>
+          <a href="#product">Product</a>
+          <a href="#pilot">Pilot</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer__copy">© <span id="year">2026</span> Luxevia – Parfum vending concept.</div>
+      </div>
+    </footer>
   </body>
 </html>
 
