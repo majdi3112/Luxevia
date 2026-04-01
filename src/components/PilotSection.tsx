@@ -4,10 +4,9 @@ import { CTAButton } from './CTAButton';
 export function PilotSection() {
   const scrollToContact = () => {
     const el = document.getElementById('contact');
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const offset = window.scrollY + rect.top - 96;
-    window.scrollTo({ top: offset, behavior: 'smooth' });
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   return (
@@ -15,38 +14,46 @@ export function PilotSection() {
       <div className="max-w-5xl mx-auto space-y-8">
         <div className="max-w-4xl mx-auto text-center space-y-3">
           <p className="section-title">Pilot &amp; partnerships</p>
-          <h2 className="section-heading">Risicovrij proberen. Daarna bewust verlengen of stoppen.</h2>
+          <h2 className="section-heading">
+            Test risicovrij op uw locatie.
+          </h2>
           <p className="text-sm sm:text-base text-slate-300">
-            In een pilot plaatst Luxevia de dispenser op uw locatie op onze kosten. U levert alleen geschikte ruimte en
-            stroom. Na de afgesproken periode bepaalt u of u door wilt – zonder verborgen verplichting om door te gaan.
+            Wij plaatsen een parfumdispenser voor een afgesproken proefperiode. Na afloop beslist u vrijblijvend of u doorgaat. Het enige wat u levert: een plekje en een stopcontact.
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 items-stretch">
           <div className="card-surface p-5 sm:p-6 lg:p-7 space-y-3">
             <h3 className="text-base sm:text-lg font-semibold text-white text-center md:text-left">
-              Wat u van de pilot mag verwachten
+              Hoe de pilot werkt
             </h3>
             <p className="text-sm text-slate-300">
-              We installeren de Marwey-unit, stemmen geuren en communicatie op uw publiek af en volgen gebruik en omzet.
-              Loopt het goed, maken we afspraken voor de volgende fase. Loopt het tegen, dan halen we de machine weg
-              volgens planning.
+              Luxevia levert, installeert en configureert de machine op de afgesproken plek. Tijdens de pilot monitoren wij gebruik en omzet, vullen wij parfums bij en lossen wij eventuele storingen op.
             </p>
             <p className="text-sm text-slate-300">
-              Voor de doorlopende fase kiest u: vaste huur per maand voor uw locatie, of een vooraf vast percentage op de
-              omzet uit sprays. Zo stemmen we af op wat u het prettigst vindt om te plannen.
+              Na de proefperiode evalueren we samen de resultaten. Bevalt het? Dan maken we er een vast partnerschap van. Bevalt het niet? Wij halen de machine kosteloos op. Geen kleine lettertjes.
             </p>
           </div>
 
           <div className="card-surface p-5 sm:p-6 flex flex-col justify-between space-y-3">
             <div>
-              <h4 className="text-sm font-semibold text-white text-center md:text-left">Geschikt als u:</h4>
+              <h4 className="text-sm font-semibold text-white text-center md:text-left">
+                Twee verdienmodellen — u kiest
+              </h4>
               <ul className="mt-2 space-y-1.5 text-sm text-slate-300">
-                <li>• Gastvrijheid en beleving wilt versterken zonder grote investering.</li>
-                <li>• Openstaat voor een beperkte proefperiode met duidelijke evaluatie.</li>
-                <li>• Ruimte en een stopcontact kunt vrijmaken op een zichtbare plek.</li>
-                <li>• Wilt samenwerken met een partij die hardware en risico draagt.</li>
+                <li className="flex gap-2">
+                  <span className="text-brand-gold font-semibold">A.</span>
+                  <span><strong className="text-slate-100">Vaste huur</strong> — een vast maandelijks bedrag, ongeacht het gebruik. Voorspelbaar inkomen.</span>
+                </li>
+                <li className="flex gap-2">
+                  <span className="text-brand-gold font-semibold">B.</span>
+                  <span><strong className="text-slate-100">Omzetpercentage</strong> — u ontvangt een vooraf afgesproken percentage van elke spray. Meer gebruik = meer inkomsten.</span>
+                </li>
               </ul>
+            </div>
+            <div className="rounded-xl border border-slate-700/80 bg-slate-900/80 px-4 py-3 text-xs text-slate-300 mt-3">
+              <p className="font-medium text-slate-100">Wat u nodig heeft</p>
+              <p className="mt-1">Alleen een kleine ruimte (wandmontage of balie) en een standaard stopcontact. Wij regelen de rest.</p>
             </div>
           </div>
         </div>
@@ -56,7 +63,7 @@ export function PilotSection() {
             Plan een risicovrije proefplaatsing
           </CTAButton>
           <p className="text-xs text-slate-400 text-center max-w-md">
-            Na de pilot bepaalt u zelf of u door wilt. Geen aanschafplicht voor uw organisatie.
+            Geen verplichting na de pilot — vervolg alleen als u tevreden bent.
           </p>
         </div>
       </div>

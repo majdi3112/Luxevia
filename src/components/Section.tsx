@@ -19,7 +19,7 @@ export function Section({ id, eyebrow, title, subtitle, children, align = 'left'
     <section
       id={id}
       ref={ref as React.RefObject<HTMLElement> | null}
-      className="py-14 sm:py-16 lg:py-20"
+      className="py-14 sm:py-16 lg:py-20 scroll-mt-24"
     >
       <div
         className={`section-container flex flex-col gap-8 transition-all duration-700 ease-out ${
@@ -42,4 +42,3 @@ export function Section({ id, eyebrow, title, subtitle, children, align = 'left'
     </section>
   );
 }
-

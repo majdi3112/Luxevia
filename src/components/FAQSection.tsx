@@ -3,34 +3,44 @@ import { useState } from 'react';
 
 const FAQ_ITEMS = [
   {
-    question: 'Betaalt mijn locatie voor de machine?',
+    question: 'Kost het mij iets om mee te doen?',
     answer:
-      'Nee. Luxevia investeert in de dispenser en het beheer. U kiest hoe u meeverdient: een vaste huur per maand voor het ter beschikking stellen van de plek, of een vooraf afgesproken percentage op de omzet uit sprays. Alles leggen we vooraf schriftelijk vast. U koopt de machine niet.'
+      'Nee. Luxevia draagt alle kosten: de machine, installatie, parfums, onderhoud en bevoorrading. U biedt alleen een plekje en een stopcontact.'
   },
   {
-    question: 'Wat is het verschil tussen vaste huur en omzetpercentage?',
+    question: 'Hoe verdien ik eraan?',
     answer:
-      'Met vaste huur per maand ontvangt u een vast bedrag, ongeacht hoe druk het is. Met een omzetpercentage varieert uw aandeel mee met het aantal verkochte sprays. Beide modellen zijn vooraf helder af te spreken; we denken mee wat past bij uw locatie.'
+      'U kiest uit twee modellen. Optie A: een vaste maandelijkse huurvergoeding, ongeacht het gebruik. Optie B: een vooraf afgesproken percentage van de omzet per spray. Beide modellen worden transparant vastgelegd vóór de plaatsing.'
   },
   {
-    question: 'Hoe werkt betalen per spray voor de bezoeker?',
+    question: 'Wat als het niet bevalt?',
     answer:
-      'De gast kiest op het 10,1″ touchscreen een geur, ziet de prijs en betaalt via de geïntegreerde terminal (contactloos, QR of kaart, afhankelijk van de configuratie). Daarna geeft de machine één gecontroleerde spray. Geen tussenkomst van uw personeel nodig.'
+      'Na de proefperiode kunt u kosteloos stoppen. Wij halen de machine op zonder verdere verplichtingen. Geen opzegtermijn, geen boete.'
   },
   {
-    question: 'Welke specificaties heeft de dispenser?',
+    question: 'Voor welke locaties is dit geschikt?',
     answer:
-      'We werken met de Marwey countertop-unit: 10,1″ touchscreen, vijf reservoirs van elk 100 ml, afmetingen 750 × 210 × 445 mm, gewicht 22 kg, piekvermogen circa 30 W, Wi‑Fi en 4G. Behuizing van verzinkt staal en acryl. Extra: digitale signage op het scherm, remote monitoring, CE- en ISO-conformiteit volgens leveranciersdocumentatie.'
+      'Voor elke locatie met voldoende bezoekersstroom: sportscholen, hotels, winkelcentra, horeca, eventlocaties en premium retail. Samen bepalen we de beste positie.'
   },
   {
-    question: 'Kan ik na de pilot stoppen?',
+    question: 'Hoe groot is de machine?',
     answer:
-      'Ja. De pilot heeft een vaste looptijd. Daarna besluit u of u door wilt met huur- of omzetmodel. Wilt u niet verlengen, dan wordt de plaatsing netjes afgerond volgens de afspraken. U zit niet vast aan een machine die u zelf heeft gekocht.'
+      'De Marwey-dispenser is 750 × 210 × 445 mm en weegt 22 kg. Compact genoeg voor wandmontage of plaatsing op een balie, zonder het interieur te domineren.'
   },
   {
-    question: 'Wat moet ik technisch regelen?',
+    question: 'Wie vult de machine bij en lost storingen op?',
     answer:
-      'Vooral een geschikte plek met normale stroom en voldoende bereik voor Wi‑Fi of 4G. Luxevia verzorgt installatie, inrichting en onderhoud van de unit. Uw team hoeft geen technische kennis van de dispenser te hebben.'
+      'Luxevia. Wij monitoren de machine op afstand via Wi-Fi of 4G. Bijvullen en onderhoud regelen wij proactief. Uw personeel hoeft niets te doen.'
+  },
+  {
+    question: 'Hoe betalen bezoekers?',
+    answer:
+      'Bezoekers kiezen een geur op het 10,1″ touchscreen en betalen contactloos, met pinpas of via QR-code. De betaling en spray verlopen binnen enkele seconden.'
+  },
+  {
+    question: 'Is de machine veilig en gecertificeerd?',
+    answer:
+      'Ja. De Marwey-dispenser is CE- en ISO-gecertificeerd en voorzien van twee jaar fabrieksgarantie. Het materiaal is gegalvaniseerd staal met acrylpanelen — robuust en professioneel.'
   }
 ];
 
@@ -38,7 +48,11 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <Section id="faq" eyebrow="Veelgestelde vragen" title="Antwoorden voor een snelle beslissing.">
+    <Section
+      id="faq"
+      eyebrow="Veelgestelde vragen"
+      title="Heldere antwoorden, geen kleine lettertjes."
+    >
       <div className="card-surface divide-y divide-slate-800/70">
         {FAQ_ITEMS.map((item, index) => {
           const isOpen = openIndex === index;
@@ -63,7 +77,9 @@ export function FAQSection() {
                   +
                 </span>
               </summary>
-              <div className="px-5 sm:px-6 pb-4 sm:pb-5 text-sm text-slate-300">{item.answer}</div>
+              <div className="px-5 sm:px-6 pb-4 sm:pb-5 text-sm text-slate-300">
+                {item.answer}
+              </div>
             </details>
           );
         })}

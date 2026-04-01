@@ -3,38 +3,32 @@ import { Section } from './Section';
 const LOCATIONS = [
   {
     title: 'Sportscholen',
-    description:
-      'Na de training even opfrissen: extra service die past bij een premium sportschool, zonder extra personeel.',
+    description: 'Leden frissen zich op na de workout. Hoge gebruiksfrequentie en een perfecte match met persoonlijke verzorging.',
     icon: '🏋️'
   },
   {
     title: 'Hotels',
-    description:
-      'Lobby, liftzone of lounge: gasten waarderen een snelle geurupgrade. Ideaal voor hotels met hoge loop.',
+    description: 'Extra service in lobby, op verdiepingen of bij de lift. Gasten waarderen de luxe touch.',
     icon: '🏨'
   },
   {
     title: 'Winkelcentra',
-    description:
-      'Bij entrees en passagezones verlengt u het verblijf en versterkt u de beleving – met omzet voor de locatie.',
+    description: 'Hoge loopstroom bij entrees, toiletten en passagezones. Meer beleving, langere verblijfstijd.',
     icon: '🛍️'
   },
   {
     title: 'Horeca',
-    description:
-      'Clubs, restaurants en bars: een discrete luxe touch die bezoekers onthouden, zonder barpersoneel te belasten.',
+    description: 'Bied gasten een opfrismoment tijdens hun bezoek. Past bij restaurants, bars en clubs.',
     icon: '🍽️'
   },
   {
     title: 'Events',
-    description:
-      'Beurzen, congressen en festivals: een onderscheidend premium punt zonder dat u zelf machines koopt.',
+    description: 'Premium touchpoint op beurzen, congressen en festivals. Onderscheidend en memorabel.',
     icon: '🎟️'
   },
   {
     title: 'Premium retail',
-    description:
-      'Parfumerie, beauty en flagship stores: versterk het merkgevoel met een strakke dispenser die bij uw uitstraling past.',
+    description: 'Versterk het merkgevoel in luxe winkels en flagship stores. Past naadloos in het interieur.',
     icon: '🛒'
   }
 ];
@@ -43,9 +37,9 @@ export function LocationSection() {
   return (
     <Section
       id="locaties"
-      eyebrow="Voor welke locaties"
-      title="Waar veel mensen komen, verdient de samenwerking."
-      subtitle="Luxevia zoekt plekken met gezonde doorloop. Wij dragen het risico; u kiest huur of omzetdeel en bouwt mee aan service en inkomsten."
+      eyebrow="Ideale locaties"
+      title="Overal waar bezoekers langskomen."
+      subtitle="Hoe hoger de loopstroom, hoe meer sprays — en hoe meer u verdient. Luxevia past bij elke omgeving met voldoende bezoekers."
     >
       <div className="grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
         {LOCATIONS.map((location) => (

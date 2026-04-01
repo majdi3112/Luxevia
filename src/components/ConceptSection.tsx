@@ -4,30 +4,27 @@ export function ConceptSection() {
   return (
     <Section
       id="concept"
-      eyebrow="Over het concept"
-      title="Wij leveren en onderhouden. U profiteert zonder eigen kapitaal."
-      subtitle="Luxevia plaatst de parfumdispenser op uw locatie en neemt investering, voorraad en technisch beheer op zich. Bezoekers betalen per spray; u verdient mee via huur of omzetdeel – volgens wat u vooraf kiest."
+      eyebrow="Het concept"
+      title="Wij investeren, u verdient mee."
+      subtitle="Luxevia plaatst een premium parfumdispenser op uw locatie. Wij nemen de volledige investering, het onderhoud en de bevoorrading op ons. Bezoekers betalen per spray — u ontvangt een vaste huur of deelt mee in de omzet."
     >
       <div className="grid gap-6 md:grid-cols-3">
         <div className="card-surface p-5 sm:p-6">
-          <h3 className="text-base font-semibold text-white">Luxevia regelt alles</h3>
+          <h3 className="text-base font-semibold text-white">Luxevia levert alles</h3>
           <p className="mt-2 text-sm text-slate-300">
-            Plaatsing, inrichting, onderhoud en bevoorrading liggen bij ons. U levert ruimte en stroom. Geen aanschaf,
-            geen verborgen kosten voor de machine.
+            Machine, installatie, parfums, onderhoud en bevoorrading — volledig voor onze rekening. U hoeft niets aan te schaffen.
           </p>
         </div>
         <div className="card-surface p-5 sm:p-6">
           <h3 className="text-base font-semibold text-white">Bezoekers betalen per spray</h3>
           <p className="mt-2 text-sm text-slate-300">
-            De gast kiest een geur, betaalt snel via de terminal en ontvangt één gecontroleerde spray. Duidelijk,
-            hygiënisch en zonder extra werk voor uw team.
+            Uw gasten kiezen een geur op het touchscreen en betalen contactloos per spray. Geen abonnementen, geen gedoe.
           </p>
         </div>
         <div className="card-surface p-5 sm:p-6">
-          <h3 className="text-base font-semibold text-white">U verdient mee, op uw voorwaarden</h3>
+          <h3 className="text-base font-semibold text-white">U verdient, zonder risico</h3>
           <p className="mt-2 text-sm text-slate-300">
-            Kies vaste huur per maand voor voorspelbare inkomsten, of een afgesproken percentage op de omzet als u
-            liever meegroeit met het succes op de vloer. Beide opties leggen we vooraf schriftelijk vast.
+            Kies een vaste maandelijkse vergoeding of een vooraf afgesproken omzetpercentage. Geen investering, geen verborgen kosten.
           </p>
         </div>
       </div>

@@ -2,34 +2,28 @@ import { Section } from './Section';
 
 const BENEFITS = [
   {
-    title: 'Geen investering, geen eigendomsrisico',
-    description:
-      'De machine en het beheer zijn van Luxevia. U hoeft geen apparaat te kopen en draait geen voorraad- of technisch risico op de hardware.'
+    title: 'Geen investering nodig',
+    description: 'Luxevia draagt alle kosten: machine, installatie, parfums en onderhoud. U biedt alleen ruimte en een stopcontact.'
   },
   {
-    title: 'Kies huur of omzetpercentage',
-    description:
-      'Vaste huur per maand geeft rust in uw begroting. Een afgesproken percentage op de spray-omzet koppelt uw inkomsten direct aan het succes op de vloer.'
+    title: 'Geen risico',
+    description: 'Bevalt het niet? Na de proefperiode kunt u kosteloos stoppen. Wij halen de machine op, zonder verplichtingen.'
   },
   {
-    title: 'Extra service, premium uitstraling',
-    description:
-      'Bezoekers krijgen een snelle, luxe geurbeleving. Het design sluit aan bij strakke interieurs en versterkt uw merk als gastheer.'
+    title: 'Flexibel verdienmodel',
+    description: 'Kies wat bij u past: een vaste maandelijkse huurvergoeding of een percentage van de omzet.'
   },
   {
-    title: 'Compact en plaatsbaar bij de doorloop',
-    description:
-      'Tafel- of balieformaat, geschikt voor zones waar mensen langskomen. Weinig ruimte, veel zichtbaarheid.'
+    title: 'Extra service voor uw gasten',
+    description: 'Bied bezoekers een luxe, tastbare ervaring die comfort verhoogt en positief bijdraagt aan hun beleving.'
   },
   {
-    title: 'Weinig vraag aan uw team',
-    description:
-      'Betaling en uitleg verloopt via touchscreen en terminal. Uw medewerkers hoeven niet te doseren of te kasseren.'
+    title: 'Premium uitstraling',
+    description: 'Een strakke, compacte machine die past bij moderne interieurs en uw locatie een verzorgde indruk geeft.'
   },
   {
-    title: 'Proefplaatsing zonder dwang',
-    description:
-      'Start met een pilot. Bevalt het niet, dan stopt u na de afgesproken periode – zonder langdurige verplichting.'
+    title: 'Volledig ontzorgd',
+    description: 'Wij monitoren op afstand, vullen bij en lossen storingen op. Uw personeel hoeft niets te doen.'
   }
 ];
 
@@ -38,7 +32,7 @@ export function BenefitsSection() {
     <Section
       id="voordelen"
       eyebrow="Voordelen voor uw locatie"
-      title="Risico bij ons. Rendement en beleving bij u."
+      title="Verdien mee zonder zorgen."
     >
       <div className="grid gap-5 sm:gap-6 md:grid-cols-2">
         {BENEFITS.map((benefit) => (

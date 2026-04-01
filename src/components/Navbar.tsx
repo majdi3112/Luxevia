@@ -27,9 +27,7 @@ export function Navbar() {
   const handleNavClick = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
-      const rect = el.getBoundingClientRect();
-      const offset = window.scrollY + rect.top - 96;
-      window.scrollTo({ top: offset, behavior: 'smooth' });
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     setIsOpen(false);
   };
@@ -43,7 +41,7 @@ export function Navbar() {
       <nav className="section-container flex items-center justify-between py-4">
         <div
           className="flex items-center gap-2 cursor-pointer"
-          onClick={() => handleNavClick('hero')}
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-brand-gold via-amber-300 to-amber-500 shadow-soft-gold" />
           <div className="flex flex-col leading-tight">
@@ -66,8 +64,11 @@ export function Navbar() {
               </button>
             ))}
           </div>
-          <CTAButton onClick={() => handleNavClick('contact')} className="ml-2">
-            Proefplaatsing plannen
+          <CTAButton
+            onClick={() => handleNavClick('contact')}
+            className="ml-2"
+          >
+            Plan een proefplaatsing
           </CTAButton>
         </div>
 
@@ -109,8 +110,11 @@ export function Navbar() {
                 {item.label}
               </button>
             ))}
-            <CTAButton onClick={() => handleNavClick('contact')} className="w-full justify-center mt-2">
-              Proefplaatsing plannen
+            <CTAButton
+              onClick={() => handleNavClick('contact')}
+              className="w-full justify-center mt-2"
+            >
+              Plan een proefplaatsing
             </CTAButton>
           </div>
         </div>
@@ -118,4 +122,3 @@ export function Navbar() {
     </header>
   );
 }
-
