@@ -5,13 +5,13 @@ const FAQ_ITEMS = [
   {
     question: 'Kost het mij iets om mee te doen?',
     answer:
-      'Nee. Luxevia draagt alle kosten: de machine, installatie, parfums, onderhoud en bevoorrading. U biedt alleen een plekje en een stopcontact.'
+      'Nee. Loma draagt alle kosten: de machine, installatie, parfums, onderhoud en bevoorrading. U biedt alleen een plekje en een stopcontact.'
   },
   {
-    question: 'Hoe verdien ik eraan?',
-    answer:
-      'U kiest uit twee modellen. Optie A: een vaste maandelijkse huurvergoeding, ongeacht het gebruik. Optie B: een vooraf afgesproken percentage van de omzet per spray. Beide modellen worden transparant vastgelegd vóór de plaatsing.'
-  },
+  question: 'Hoe verdien ik eraan?',
+  answer:
+    'U ontvangt een vooraf afgesproken percentage van de omzet die de parfumdispenser op uw locatie genereert. Hoe meer de dispenser wordt gebruikt, hoe hoger uw opbrengst. Het omzetpercentage wordt vooraf transparant afgesproken en vastgelegd.'
+},
   {
     question: 'Wat als het niet bevalt?',
     answer:
@@ -25,22 +25,22 @@ const FAQ_ITEMS = [
   {
     question: 'Hoe groot is de machine?',
     answer:
-      'De Marwey-dispenser is 750 × 210 × 445 mm en weegt 22 kg. Compact genoeg voor wandmontage of plaatsing op een balie, zonder het interieur te domineren.'
+      '750 × 210 × 445 mm en weegt 22 kg. Compact genoeg voor wandmontage of plaatsing op een balie, zonder het interieur te domineren.'
   },
   {
     question: 'Wie vult de machine bij en lost storingen op?',
     answer:
-      'Luxevia. Wij monitoren de machine op afstand via Wi-Fi of 4G. Bijvullen en onderhoud regelen wij proactief. Uw personeel hoeft niets te doen.'
+      'Loma. Wij monitoren de machine op afstand via Wi-Fi of 4G. Bijvullen en onderhoud regelen wij proactief. Uw personeel hoeft niets te doen.'
   },
   {
     question: 'Hoe betalen bezoekers?',
     answer:
-      'Bezoekers kiezen een geur op het 10,1″ touchscreen en betalen contactloos, met pinpas of via QR-code. De betaling en spray verlopen binnen enkele seconden.'
+      'Bezoekers kiezen een geur op het 10,1″ touchscreen en betalen contactloos of via QR-code. De betaling en spray verlopen binnen enkele seconden.'
   },
   {
     question: 'Is de machine veilig en gecertificeerd?',
     answer:
-      'Ja. De Marwey-dispenser is CE- en ISO-gecertificeerd en voorzien van twee jaar fabrieksgarantie. Het materiaal is gegalvaniseerd staal met acrylpanelen — robuust en professioneel.'
+      'CE- en ISO-gecertificeerd en voorzien van twee jaar fabrieksgarantie. Het materiaal is gegalvaniseerd staal met acrylpanelen — robuust en professioneel.'
   }
 ];
 
@@ -51,9 +51,9 @@ export function FAQSection() {
     <Section
       id="faq"
       eyebrow="Veelgestelde vragen"
-      title="Heldere antwoorden, geen kleine lettertjes."
+      title="Heldere antwoorden, geen kleine lettertjes"
     >
-      <div className="card-surface divide-y divide-slate-800/70">
+      <div className="card-surface divide-y divide-sky-100">
         {FAQ_ITEMS.map((item, index) => {
           const isOpen = openIndex === index;
           return (
@@ -66,10 +66,10 @@ export function FAQSection() {
                 setOpenIndex(isOpen ? null : index);
               }}
             >
-              <summary className="flex cursor-pointer items-center justify-between px-5 sm:px-6 py-4 sm:py-5 text-sm sm:text-base text-slate-100">
+              <summary className="flex cursor-pointer items-center justify-between px-5 sm:px-6 py-4 sm:py-5 text-sm sm:text-base text-slate-800">
                 <span>{item.question}</span>
                 <span
-                  className={`ml-4 flex h-7 w-7 items-center justify-center rounded-full border border-slate-700 text-xs transition-transform ${
+                  className={`ml-4 flex h-7 w-7 items-center justify-center rounded-full border border-sky-200 text-xs transition-transform ${
                     isOpen ? 'rotate-45 border-brand-gold text-brand-gold' : ''
                   }`}
                   aria-hidden
@@ -77,7 +77,7 @@ export function FAQSection() {
                   +
                 </span>
               </summary>
-              <div className="px-5 sm:px-6 pb-4 sm:pb-5 text-sm text-slate-300">
+              <div className="px-5 sm:px-6 pb-4 sm:pb-5 text-sm text-slate-600">
                 {item.answer}
               </div>
             </details>

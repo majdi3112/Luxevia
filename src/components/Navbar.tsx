@@ -7,7 +7,7 @@ const NAV_ITEMS = [
   { id: 'voordelen', label: 'Voordelen' },
   { id: 'werkwijze', label: 'Hoe het werkt' },
   { id: 'product', label: 'Product' },
-  { id: 'pilot', label: 'Pilot' },
+  { id: 'pilot', label: 'Proef Periode' },
   { id: 'faq', label: 'FAQ' },
   { id: 'contact', label: 'Contact' }
 ];
@@ -35,7 +35,7 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-40 transition-all ${
-        isScrolled ? 'backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/60' : 'bg-gradient-to-b from-slate-950 via-slate-950/80 to-transparent'
+        isScrolled ? 'backdrop-blur-xl bg-white/90 border-b border-sky-100' : 'bg-gradient-to-b from-sky-50 via-white/80 to-transparent'
       }`}
     >
       <nav className="section-container flex items-center justify-between py-4">
@@ -43,17 +43,24 @@ export function Navbar() {
           className="flex items-center gap-2 cursor-pointer"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <div className="h-8 w-8 rounded-full bg-gradient-to-tr from-brand-gold via-amber-300 to-amber-500 shadow-soft-gold" />
-          <div className="flex flex-col leading-tight">
-            <span className="text-sm font-semibold tracking-[0.24em] uppercase text-brand-goldSoft">
-              Luxevia
-            </span>
-            <span className="text-xs text-slate-400">Fragrance Vending</span>
-          </div>
+          <img
+  src="public/PHOTO-2026-09-13-18-54-26.jpg"
+  alt="LoMa logo"
+  className="h-11 w-11 object-contain"
+/>
+
+<div className="flex flex-col leading-tight">
+  <span className="text-sm font-semibold tracking-[0.18em] text-slate-900">
+    LoMa
+  </span>
+  <span className="text-xs text-slate-500">
+    Fragrance Vending
+  </span>
+</div>
         </div>
 
         <div className="hidden lg:flex items-center gap-8">
-          <div className="flex gap-6 text-xs font-medium text-slate-300">
+          <div className="flex gap-6 text-xs font-medium text-slate-600">
             {NAV_ITEMS.map((item) => (
               <button
                 key={item.id}
@@ -73,7 +80,7 @@ export function Navbar() {
         </div>
 
         <button
-          className="lg:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-slate-700/80 bg-slate-900/70 text-slate-200 hover:border-brand-gold/80"
+          className="lg:hidden inline-flex h-9 w-9 items-center justify-center rounded-full border border-sky-200 bg-white text-slate-700 hover:border-brand-gold/80"
           onClick={() => setIsOpen((v) => !v)}
           aria-label="Open navigatie"
         >
@@ -99,13 +106,13 @@ export function Navbar() {
       </nav>
 
       {isOpen && (
-        <div className="lg:hidden border-t border-slate-800/70 bg-slate-950/95 backdrop-blur-xl">
+        <div className="lg:hidden border-t border-sky-100 bg-white/95 backdrop-blur-xl">
           <div className="section-container py-4 space-y-2">
             {NAV_ITEMS.map((item) => (
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className="block w-full text-left py-2 text-sm text-slate-200 hover:text-brand-gold"
+                className="block w-full text-left py-2 text-sm text-slate-700 hover:text-brand-gold"
               >
                 {item.label}
               </button>

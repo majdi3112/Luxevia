@@ -5,19 +5,18 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          gold: '#F4C97A',
-          goldSoft: '#FBE9C6',
-          dark: '#050816'
+          gold: '#0EA5E9',
+          goldSoft: '#0284C7',
+          dark: '#F0F9FF'
         }
       },
       fontFamily: {
         sans: ['system-ui', 'ui-sans-serif', 'sans-serif']
       },
       boxShadow: {
-        'soft-gold': '0 18px 45px rgba(244, 201, 122, 0.25)'
+        'soft-gold': '0 18px 45px rgba(14, 165, 233, 0.22)'
       }
     }
   },
   plugins: []
 };
-

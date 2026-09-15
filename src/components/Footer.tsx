@@ -7,15 +7,15 @@ export function Footer() {
   };
 
   return (
-    <footer className="border-t border-slate-800/80 bg-slate-950/95">
+    <footer className="border-t border-sky-100 bg-white">
       <div className="section-container py-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold text-slate-100">Luxevia Fragrance Vending</p>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="text-sm font-semibold text-slate-900">Loma Fragrance Vending</p>
+          <p className="mt-1 text-xs text-slate-500">
             Premium parfumdispensers op uw locatie — zonder investering of risico.
           </p>
         </div>
-        <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-slate-400">
+        <nav className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-slate-500">
           <button onClick={() => handleNavClick('concept')} className="hover:text-brand-gold">
             Concept
           </button>
@@ -29,7 +29,7 @@ export function Footer() {
             Product
           </button>
           <button onClick={() => handleNavClick('pilot')} className="hover:text-brand-gold">
-            Pilot
+            Proef Periode
           </button>
           <button onClick={() => handleNavClick('faq')} className="hover:text-brand-gold">
             FAQ
@@ -38,8 +38,8 @@ export function Footer() {
             Contact
           </button>
         </nav>
-        <p className="text-[11px] text-slate-500">
-          &copy; {new Date().getFullYear()} Luxevia
+        <p className="text-[11px] text-slate-400">
+          &copy; {new Date().getFullYear()} Loma
         </p>
       </div>
     </footer>

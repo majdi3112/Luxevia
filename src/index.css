@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  @apply bg-brand-dark text-slate-50 font-sans antialiased;
+  @apply bg-brand-dark text-slate-800 font-sans antialiased;
 }
 
 .section-container {
@@ -19,10 +19,9 @@ body {
 }
 
 .section-heading {
-  @apply mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold text-white;
+  @apply mt-3 text-2xl sm:text-3xl lg:text-4xl font-semibold text-slate-900;
 }
 
 .card-surface {
-  @apply bg-slate-900/60 border border-slate-800/80 rounded-2xl shadow-lg shadow-black/40 backdrop-blur-md;
+  @apply bg-white border border-sky-100 rounded-2xl shadow-lg shadow-sky-200/50;
 }
-

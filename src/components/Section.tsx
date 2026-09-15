@@ -33,7 +33,7 @@ export function Section({ id, eyebrow, title, subtitle, children, align = 'left'
             {eyebrow && <p className="section-title">{eyebrow}</p>}
             {title && <h2 className="section-heading">{title}</h2>}
             {subtitle && (
-              <p className="text-sm sm:text-base text-slate-300">{subtitle}</p>
+              <p className="text-sm sm:text-base text-slate-600">{subtitle}</p>
             )}
           </div>
         )}
