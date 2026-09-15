@@ -44,7 +44,7 @@ export function Navbar() {
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <img
-  src="public/PHOTO-2026-09-13-18-54-26.jpg"
+  src="/PHOTO-2026-09-13-18-54-26.jpg"
   alt="LoMa logo"
   className="h-11 w-11 object-contain"
 />

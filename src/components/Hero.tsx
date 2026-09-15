@@ -53,7 +53,7 @@ export function Hero() {
             <div className="absolute -inset-4 rounded-[1.75rem] bg-gradient-to-tr from-sky-400/40 via-white to-sky-200/50 opacity-80 blur-xl" />
             <div className="relative card-surface rounded-[1.75rem] p-4 sm:p-5 lg:p-6 w-[min(420px,80vw)]">
               <img
-                src="/Loma/machine.jpeg"
+                src="/machine.jpeg"
                 alt="Loma parfumdispenser – Marwey vending machine met touchscreen en meerdere geuren"
                 className="w-full rounded-[1.4rem] object-cover"
               />
